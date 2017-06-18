@@ -1,0 +1,9 @@
+# Windows Credential Manager
+wincreds:
+  enabled: true
+  generic-creds:
+    - 192.168.1.66:user01:pass123
+    - realco-AWS_SECRET_ACCESS_KEY-david:AKIAI44QH8DHBEXAMPLE:je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
+  domain-creds:
+    - domain01:adel\dc:pass123
+    - winsrv:administrator:54657

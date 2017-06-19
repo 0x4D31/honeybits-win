@@ -10,6 +10,15 @@ import (
 )
 
 
+var ASCII = `
+  /\  /\___  _ __   ___ _   _| |__ (_) |_ ___ 
+ / /_/ / _ \| '_ \ / _ \ | | | '_ \| | __/ __|
+/ __  / (_) | | | |  __/ |_| | |_) | | |_\__ \
+\/ /_/ \___/|_| |_|\___|\__, |_.__/|_|\__|___/
+========================|___/=================
+                                         	
+`
+
 func check(e error) {
 	if e != nil {
 		os.Stderr.WriteString(fmt.Sprintf("Error: %s\n", e.Error()))
@@ -101,6 +110,8 @@ func cred_create(ctype string, ctarget string, cuser string, cpass string) {
 }
 
 func main() {
+    fmt.Print(ASCII)
+
     conf, err := loadCon()
     check(err)
 
